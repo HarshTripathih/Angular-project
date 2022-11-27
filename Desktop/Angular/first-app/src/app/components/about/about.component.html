@@ -1,0 +1,23 @@
+<p>about works! data sof the users are</p>
+<table>
+    <tr>
+        <th>ID:</th>
+        <th>Name:</th>
+        <th>Email:</th>
+        <th>PhoenNo:</th>
+        <th>UserName:</th>
+        <th>Website:</th>
+        <th>Company:</th>
+        <th>Address:</th>
+    </tr>
+    <tr *ngFor="let user of userData">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.website}}</td>
+        <td>{{user.company.name}}</td>
+        <td>{{user.address.street}},{{user.address.city}}-{{user.address.zipcode}},</td>
+    </tr>
+</table>
